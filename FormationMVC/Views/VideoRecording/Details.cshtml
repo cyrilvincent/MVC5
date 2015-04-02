@@ -1,0 +1,98 @@
+﻿@model FormationMVC.Library.VideoRecording
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>VideoRecording</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Director)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Director)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Category)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Category)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.ImageName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.YearReleased)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.YearReleased)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Price)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Price)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.StockCount)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StockCount)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Duration)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Duration)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
